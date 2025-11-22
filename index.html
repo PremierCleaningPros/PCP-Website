@@ -1,46 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Premier Cleaning Pros</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f7f9fc;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(135deg, #0b3c77, #0e66b3);
+      padding: 40px 20px;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .services, .pricing-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #0b3c77;
+    }
+    .price {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 10px 0;
+      color: #0e66b3;
+    }
+    .btn {
+      display: inline-block;
+      background: #0e66b3;
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      max-width: 600px;
+      margin: auto;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background: #0b3c77;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
 </head>
-
 <body>
   <header>
     <h1>Premier Cleaning Pros</h1>
-    <p class="tagline">Meticulous • Reliable • Professional</p>
+    <p>Meticulous • Reliable • Professional</p>
     <a class="cta" href="tel:7707428633">Call Now: 770-742-8633</a>
   </header>
 
-  <section class="about">
+<section class="about">
     <h2>About Us</h2>
-    <p>At Premier Cleaning Pros, we deliver top-tier residential, commercial, deep clean, Airbnb turnovers, and move-in/move-out cleaning services. We’re committed to quality, consistency, and leaving your space spotless every time.</p>
+    <p>At Premier Cleaning Pros, we treat your space like it’s our own. We show up with care, attention to detail, and a genuine love for making homes and businesses feel fresh and welcoming. Whether you need help with an Airbnb, a move, or weekly upkeep, we’re here to make life easier — one sparkling clean at a time! Reliable service, friendly faces, and results you’ll truly feel at home with. We’re committed to quality, consistency, and leaving your space spotless every time.</p>
   </section>
-
-  <section class="services">
+ 
+ <section class="section" id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Residential Cleaning</li>
-      <li>Commercial Office Cleaning</li>
-      <li>Airbnb / Short-Term Rental Flips</li>
-      <li>Deep Cleaning</li>
-      <li>Move-In / Move-Out Cleaning</li>
-    </ul>
+    <div class="services">
+      <div class="card">
+        <h3>Residential Standard Clean</h3>
+        <p>Perfect for regular upkeep of homes and apartments. Dusting, vacuuming, mopping, bathroom & kitchen cleaning, trash removal.</p>
+      </div>
+      <div class="card">
+        <h3>Residential Deep Clean</h3>
+        <p>Detailed top-to-bottom cleaning for homes that need extra attention. Baseboards, vents, inside appliances, detailed bathroom scrub</p>
+      </div>
+      <div class="card">
+        <h3>Move In / Move Out</h3>
+        <p>Ideal for empty properties before or after moving. Full deep clean of all rooms, cabinets, and appliances</p>
+      </div>
+  <div class="card">
+        <h3>Airbnb Clean</h3>
+        <p>Quick and consistent turnover service for short-term rentals</p>
+      </div>
+  <div class="card">
+        <h3>Commercial Clean</h3>
+        <p>Professional for offices, retail spaces, and facilities</p>
+      </div>
+    </div>
   </section>
 
-  <section class="contact">
-    <h2>Book a Cleaning</h2>
-    <p>Ready for a spotless space? Reach out today!</p>
-    <a class="cta" href="https://calendly.com/premiercleaningprosusa">Book on Calendly</a>
-    <a class="cta secondary" href="mailto:premiercleaningprosusa@gmail.com">Email Us</a>
+  <section class="section" id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-table">
+      <div class="card">
+        <h3>Residential Standard Clean</h3>
+        <div class="price">$120+</div>
+        <p>Great for routine upkeep with essential cleaning tasks included.</p>
+      </div>
+      <div class="card">
+        <h3>Residential Deep Clean</h3>
+        <div class="price">$200+</div>
+        <p>Top-to-bottom cleaning for maximum freshness and detail.</p>
+      </div>
+      <div class="card">
+        <h3>Move-In / Move-Out</h3>
+        <div class="price">$280+</div>
+        <p>Perfect for landlords, tenants, and real estate turnovers.</p>
+      </div>
+      <div class="card">
+        <h3>Airbnb Clean</h3>
+        <div class="price">$150+</div>
+        <p>Fast, hotel-style turnovers that leave your rental fresh, flawless, and five-star ready for every guest.</p>
+      </div>
+      <div class="card">
+        <h3>Commercial Clean</h3>
+        <div class="price">Custom Quote</div>
+        <p>Professional, reliable cleaning that keeps your workplace spotless, sanitized, and client-ready every day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="booking">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xrbjewbd" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="phone" placeholder="Phone Number" required />
+      <textarea name="message" placeholder="Tell us what you need" rows="4"></textarea>
+      <button class="btn" type="submit">Submit Request</button>
+    </form>
+    <div style="text-align:center; margin-top:25px;">
+      <a class="btn" href="https://calendly.com/premiercleaningprosusa" target="_blank">Book Cleaning Online via Calendly</a>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Premier Cleaning Pros — All Rights Reserved.</p>
+    <p>Premier Cleaning Pros • 770-742-8633 • premiercleaningprosusa@gmail.com</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
